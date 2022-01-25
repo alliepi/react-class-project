@@ -1,4 +1,4 @@
-import { Component } from "react/cjs/react.production.min";
+import React, { Component } from "react";
 import {Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle} from 'reactstrap';
 
 class CampsiteInfo extends Component{
@@ -35,9 +35,11 @@ class CampsiteInfo extends Component{
     render(){
         if (this.props.campsite){
             return(
-                <div className="row">
-                    {this.renderCampsite(this.props.campsite)}
-                    {this.renderComments(this.props.campsite.comments)}
+                <div className="container">
+                    <div className="row">
+                        {this.renderCampsite(this.props.campsite)}
+                        {this.renderComments(this.props.campsite.comments)}
+                    </div>
                 </div>
             )
         }
