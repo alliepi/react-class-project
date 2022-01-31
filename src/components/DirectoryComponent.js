@@ -22,7 +22,7 @@ function Directory(props) {
                     <RenderDirectoryItem campsite={campsite} />
                 </div>
             )
-        })
+        });
         return(
             <div className="container">
                 <div className="row">
@@ -39,7 +39,7 @@ function Directory(props) {
                     {directory}
                 </div>
             </div>
-        )
+        );
     }
 
 
